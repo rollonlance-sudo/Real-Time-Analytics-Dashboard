@@ -155,7 +155,18 @@ function App() {
           padding: '18px 0', borderBottom: '1px solid #2a3550',
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-            <span style={{ fontSize: 22 }}>📊</span>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="url(#logo-grad)" />
+              <rect x="7" y="18" width="4" height="8" rx="1" fill="#fff" opacity="0.9" />
+              <rect x="14" y="12" width="4" height="14" rx="1" fill="#fff" opacity="0.9" />
+              <rect x="21" y="6" width="4" height="20" rx="1" fill="#fff" opacity="0.9" />
+              <defs>
+                <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#3b82f6" />
+                  <stop offset="1" stopColor="#8b5cf6" />
+                </linearGradient>
+              </defs>
+            </svg>
             <span style={{
               fontFamily: "'DM Sans', sans-serif", fontSize: 18, fontWeight: 700, color: '#e2e8f0',
             }}>
